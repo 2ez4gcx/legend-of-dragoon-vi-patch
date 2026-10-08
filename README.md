@@ -23,10 +23,10 @@ Mỗi đĩa có **một** file vá riêng; phải vá đủ cả 4 đĩa để c
 
 | Đĩa | File cần tải | Mã đĩa | SHA-256 đĩa ra bắt đầu bằng |
 |---|---|---|---|
-| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `8e911abd` |
-| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `11dd172a` |
-| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `ebff8095` |
-| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `278b9d48` |
+| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `a5a68030` |
+| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `b6c27f9d` |
+| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `1783cb68` |
+| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `78cfe43e` |
 
 Quy tắc quan trọng, tránh nhầm:
 
@@ -40,7 +40,8 @@ Quy tắc quan trọng, tránh nhầm:
 tên và mô tả vật phẩm, phép, thông báo trong trận, chữ vẽ sẵn trong hình (menu
 màn tựa, nhãn menu, tiêu đề 4 chương). Addition dịch là **Liên Kích**.
 Giữ tiếng Anh: tên nhân vật, **tên trang bị** (vũ khí, giáp, mũ, giày, phụ
-kiện), phim (FMV), màn "PLEASE INSERT DISC".
+kiện), **tên kỹ năng Liên Kích** (Double Slash, Volcano… cho khớp chữ hiện lúc ra
+đòn), phim (FMV), màn "PLEASE INSERT DISC".
 
 Các file khác trong gói:
 
@@ -209,10 +210,10 @@ Tính SHA-256 của từng file đã vá (cùng cách ở mục 2) và so với 
 
 | Đĩa | SHA-256 đĩa ra |
 |---|---|
-| 1 | `8e911abd2651e50dd036fd6b28ec3f3fbeb5f77c57061d9267fc1ccf79b3050a` |
-| 2 | `11dd172ab919ae5d79cfaed1e5a8d89fe5eddd9b0fc570175c00aa72f6fe355a` |
-| 3 | `ebff8095715893819193759ca2c7388e3d8c249d8836c32c90089ee8846c9553` |
-| 4 | `278b9d483121ab5b2c7f3fbb1e61f9216431987fb1793c4f36ee23abb50d5202` |
+| 1 | `a5a680300bac216d9852b6ac5913dad67b939153d1122cdd2feef9ea87a98200` |
+| 2 | `b6c27f9dfa5b894a8d493289f4a0ac4452c87bb41bbcef06ba49394eda83ff63` |
+| 3 | `1783cb68b7eb8dca422058f3bf0ad40bab2ba1351c9bb8a964f2698cfaa0eb7c` |
+| 4 | `78cfe43eb12d539a884d56a47535632109987f5850575bd14217329058dd6bc3` |
 
 Chỉ cần so 8 ký tự đầu. Đúng chuỗi này thì file của bạn giống từng byte với bản
 đã được kiểm thử; mọi lỗi nếu có sẽ không phải do bước áp vá. Đĩa đã vá có
@@ -256,6 +257,18 @@ PCSX-Redux; ePSXe, Mednafen/Beetle PSX đều đọc được BIN/CUE.
   vẫn hiện chữ cũ và có thể mang theo lỗi cũ (ví dụ lỗi đứng máy khi ra đòn của
   bản trước 6/10/2026) dù đĩa mới đã đúng. Vào game bằng "Continue" từ thẻ nhớ.
 
+> **Cập nhật 8/10/2026 (v1.3):**
+> - Sửa **kẹt không điều khiển được** khi vào nhà tù Hellena.
+> - Sửa **sập game ở trận Fruegel** (và các khung thoại khác trong trận/phim).
+> - Sửa chữ bị lẫn nét ở núi lửa Villude, khu rừng.
+> - Cửa hiệu và menu lựa chọn: vạch chọn không còn lệch dòng.
+> - Dịch thêm **hơn 1.200 câu** trước đây còn tiếng Anh: hướng dẫn chiến đấu của
+>   Lavitz, cảnh gặp Lavitz trong nhà tù, thoại NPC Fletz, Donau, lâu đài Tiberoa
+>   (đĩa 2), Miranda và Nữ hoàng Theresa (đĩa 3), Savan, Ulara và Charle (đĩa 4)…
+> - Tên vùng trên bản đồ thế giới bằng tiếng Việt; khung tên địa điểm cân đối.
+> - Tên kỹ năng Liên Kích giữ tiếng Anh cho khớp chữ trong trận.
+> - Cửa hàng: chữ "Đang có" không còn che mất số lượng.
+>
 > **Cập nhật 6/10/2026 (v1.2):**
 > - Sửa **đứng máy khi ra đòn trong trận**.
 > - Sửa chữ tràn khung / xuống dòng giữa chữ; tên người nói luôn nằm dòng riêng.
