@@ -23,10 +23,10 @@ Mỗi đĩa có **một** file vá riêng; phải vá đủ cả 4 đĩa để c
 
 | Đĩa | File cần tải | Mã đĩa | SHA-256 đĩa ra bắt đầu bằng |
 |---|---|---|---|
-| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `8469489c` |
-| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `768c8324` |
-| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `0b0d7b57` |
-| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `17e1c2a5` |
+| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `416bca3f` |
+| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `dd1b9259` |
+| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `77a9e944` |
+| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `cfdcd245` |
 
 Quy tắc quan trọng, tránh nhầm:
 
@@ -210,10 +210,10 @@ Tính SHA-256 của từng file đã vá (cùng cách ở mục 2) và so với 
 
 | Đĩa | SHA-256 đĩa ra |
 |---|---|
-| 1 | `8469489c171b91be2e15f90a698cb83ce74f14dfe21a2602d22769b803e36296` |
-| 2 | `768c832438d286587a80d4da2a519a1fdea9c2f08056d7a9bb76bf9c531c69da` |
-| 3 | `0b0d7b5754ecf331b3c5ee80a505a97ad018f0feba1b55898b3d7c2c52d8cc0b` |
-| 4 | `17e1c2a5ddf41193f19abd08dc116f99e8f194451f82c7bf9011039001b56e76` |
+| 1 | `416bca3fef1aa329b5db99135e9cd02824f28377756f854d20f69dc50abd53eb` |
+| 2 | `dd1b9259b0ba755447f471d41c0ac6084e4639ecda279a7512de027342646b0d` |
+| 3 | `77a9e944c3b794517a0820e24529c3554f85a631ad8e654cf7ce0ee7b3f9e24e` |
+| 4 | `cfdcd245d261f94ae689c7623db6fa36f4f9438d67cac0ec6fae869c60a91555` |
 
 Chỉ cần so 8 ký tự đầu. Đúng chuỗi này thì file của bạn giống từng byte với bản
 đã được kiểm thử; mọi lỗi nếu có sẽ không phải do bước áp vá. Đĩa đã vá có
@@ -257,21 +257,49 @@ PCSX-Redux; ePSXe, Mednafen/Beetle PSX đều đọc được BIN/CUE.
   vẫn hiện chữ cũ và có thể mang theo lỗi cũ (ví dụ lỗi đứng máy khi ra đòn của
   bản trước 6/10/2026) dù đĩa mới đã đúng. Vào game bằng "Continue" từ thẻ nhớ.
 
+> **Cập nhật 8/10/2026 (v1.5):**
+> - **Màn hình đen khi vào phòng Magi ở Lâu Đài Đen (cuối đĩa 1, trước trận
+>   Doel)** trên ePSXe Android: không phải lỗi dữ liệu bản dịch. Cùng ảnh đĩa,
+>   cùng trạng thái chạy trên PCSX-Redux vẫn vào phòng và qua cảnh bình thường.
+>   Lúc bị đen, giả lập đọc file ảnh nền của phòng lệch 2 sector, trong khi người
+>   chơi đã nạp tiếp save state qua nhiều bản vá. Cách chữa: tắt hẳn giả lập,
+>   mở lại bằng đĩa vá mới, vào bằng "Continue" từ **thẻ nhớ**, không nạp save
+>   state. Nếu vẫn đen thì dùng DuckStation cho đoạn này.
+> - Tên người nói "???" không còn bị dính vào lời thoại; tên người nói ở phòng
+>   Magi không còn bị ngắt dòng.
+> - Rà lại từng câu thoại của cả 4 đĩa: sửa nghĩa sai, xưng hô theo từng cặp
+>   nhân vật (Dart–Lavitz "tớ–cậu", Rose–Zieg "thiếp–chàng", Kongol, Charle,
+>   Martel…), câu cụt hoặc tối nghĩa.
+> - Thống nhất thuật ngữ giữa lời thoại và menu: Long Hồn theo màu (Long Hồn
+>   Mắt Đỏ, Biển Xanh, Ngọc Bích…), Quả Cầu Phong Ấn, Đảo Ngục Tù, Núi Mộ Rồng,
+>   Gậy Phong Long, Ulara - Trấn Gió Xuân.
+> - Tên trang bị giữ tiếng Anh cả trong lời thoại, kể cả **Dragon Buster**.
+> - Câu "Nhận được X" dùng đúng tên vật phẩm trong túi đồ (Bom Ảo Giác, Đá Phong
+>   Ấn, Tia Băng, Gió Giật, Giấy Thông Hành, Giấy Phép Thuyền, Giấy Phép Làm
+>   Luật / Phóng Luật, Chân Dung Lavitz…).
+>
 > **Cập nhật 8/10/2026 (v1.4):**
 > - Rà lại toàn bộ hộp lựa chọn của 4 đĩa theo lệnh đặt vạch chọn trong script
 >   (260 câu): vạch chọn không còn lệch dòng (ví dụ "Quái Vật Đen hay em?" ở
->   đền Shirley, cảnh mẹ Miranda, chọn người chơi, dịch chuyển ở Ấn Phong).
+>   đền Shirley, cảnh mẹ Miranda, chọn người chơi, dịch chuyển ở Phong Ấn).
 > - Khung thoại có bề rộng cố định (trong trận, cảnh thử thách) không còn bị
 >   game tự ngắt dòng sinh dòng trống / chữ tràn khung (118 câu); thông báo
 >   một dòng trong trận ("Còn 9 mạng", "Lệnh tấn công bị chặn!!"...) không còn
 >   bị gãy thành hai dòng.
 > - Khung có số chèn không còn bị cắt mất số: số vé ở khu vui chơi Lohan, tiền
 >   ("Tiền ...G") ở cửa hàng/nhà trọ, Bụi Sao, điểm trò chơi, thi nấu ăn.
+> - Bảng vào địa điểm trên bản đồ thế giới: khung không còn hẹp hơn ảnh và vạch
+>   chọn (đúng kích thước bản gốc).
+> - Bảng giá vé / đổi vé ở khu vui chơi Lohan thẳng cột; bảng thống kê thi nấu
+>   ăn không còn số đè lên chữ.
+> - Dịch thêm 7 câu trước đây bị sót (lời tả đồ vật, câu thoại ngắn ở đĩa 1, 3, 4)
+>   và 2 câu trong trận; hộp "Thay thế?" đổi "Không" thành "Thôi".
 > - **Chữ hiện sai kiểu "Dart" thành "gưrt", "Nhận được" thành "Nitzn được"**
 >   là do nạp save state tạo từ bản vá cũ: font chữ chỉ được nạp lúc bật game,
 >   save state giữ font của bản cũ. Bật lại game rồi vào bằng "Continue" từ thẻ
->   nhớ là hết. Từ v1.3 trở đi bảng chữ ghép được giữ cố định, nên save state
->   tạo trên v1.3 dùng tiếp được với các bản sau.
+>   nhớ là hết. Từ v1.3 trở đi bảng chữ ghép được giữ cố định, nhưng vị trí dữ
+>   liệu trên đĩa vẫn đổi giữa các bản, nên khi đổi bản vá hãy luôn vào lại bằng
+>   thẻ nhớ thay vì save state.
 >
 > **Cập nhật 8/10/2026 (v1.3):**
 > - Sửa **kẹt không điều khiển được** khi vào nhà tù Hellena.
