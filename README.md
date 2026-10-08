@@ -23,10 +23,10 @@ Mỗi đĩa có **một** file vá riêng; phải vá đủ cả 4 đĩa để c
 
 | Đĩa | File cần tải | Mã đĩa | SHA-256 đĩa ra bắt đầu bằng |
 |---|---|---|---|
-| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `4bf6a6b4` |
-| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `b5220895` |
-| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `87f7d552` |
-| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `97b0f667` |
+| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `8469489c` |
+| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `768c8324` |
+| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `0b0d7b57` |
+| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `17e1c2a5` |
 
 Quy tắc quan trọng, tránh nhầm:
 
@@ -210,10 +210,10 @@ Tính SHA-256 của từng file đã vá (cùng cách ở mục 2) và so với 
 
 | Đĩa | SHA-256 đĩa ra |
 |---|---|
-| 1 | `4bf6a6b450a1325bca74d7d08004b1995bb9063628a3dddb1192478ee9940d55` |
-| 2 | `b5220895f42d4f5c1a240f316a9591e648700537e7904a59c1394c3462b95cee` |
-| 3 | `87f7d5526a017fd4945662baba5d4783655ab4a85382bc223ab19d9a7c327e48` |
-| 4 | `97b0f667c0c8275a3c0bb8b8d02d53d5fed413ec33c642eb13eac08a252bfcbd` |
+| 1 | `8469489c171b91be2e15f90a698cb83ce74f14dfe21a2602d22769b803e36296` |
+| 2 | `768c832438d286587a80d4da2a519a1fdea9c2f08056d7a9bb76bf9c531c69da` |
+| 3 | `0b0d7b5754ecf331b3c5ee80a505a97ad018f0feba1b55898b3d7c2c52d8cc0b` |
+| 4 | `17e1c2a5ddf41193f19abd08dc116f99e8f194451f82c7bf9011039001b56e76` |
 
 Chỉ cần so 8 ký tự đầu. Đúng chuỗi này thì file của bạn giống từng byte với bản
 đã được kiểm thử; mọi lỗi nếu có sẽ không phải do bước áp vá. Đĩa đã vá có
@@ -262,7 +262,11 @@ PCSX-Redux; ePSXe, Mednafen/Beetle PSX đều đọc được BIN/CUE.
 >   (260 câu): vạch chọn không còn lệch dòng (ví dụ "Quái Vật Đen hay em?" ở
 >   đền Shirley, cảnh mẹ Miranda, chọn người chơi, dịch chuyển ở Ấn Phong).
 > - Khung thoại có bề rộng cố định (trong trận, cảnh thử thách) không còn bị
->   game tự ngắt dòng sinh dòng trống / chữ tràn khung (118 câu).
+>   game tự ngắt dòng sinh dòng trống / chữ tràn khung (118 câu); thông báo
+>   một dòng trong trận ("Còn 9 mạng", "Lệnh tấn công bị chặn!!"...) không còn
+>   bị gãy thành hai dòng.
+> - Khung có số chèn không còn bị cắt mất số: số vé ở khu vui chơi Lohan, tiền
+>   ("Tiền ...G") ở cửa hàng/nhà trọ, Bụi Sao, điểm trò chơi, thi nấu ăn.
 > - **Chữ hiện sai kiểu "Dart" thành "gưrt", "Nhận được" thành "Nitzn được"**
 >   là do nạp save state tạo từ bản vá cũ: font chữ chỉ được nạp lúc bật game,
 >   save state giữ font của bản cũ. Bật lại game rồi vào bằng "Continue" từ thẻ
