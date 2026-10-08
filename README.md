@@ -23,10 +23,10 @@ Mỗi đĩa có **một** file vá riêng; phải vá đủ cả 4 đĩa để c
 
 | Đĩa | File cần tải | Mã đĩa | SHA-256 đĩa ra bắt đầu bằng |
 |---|---|---|---|
-| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `416bca3f` |
-| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `dd1b9259` |
-| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `77a9e944` |
-| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `cfdcd245` |
+| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `3bca142f` |
+| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `6de00991` |
+| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `562be3f9` |
+| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `80a82bbe` |
 
 Quy tắc quan trọng, tránh nhầm:
 
@@ -210,10 +210,10 @@ Tính SHA-256 của từng file đã vá (cùng cách ở mục 2) và so với 
 
 | Đĩa | SHA-256 đĩa ra |
 |---|---|
-| 1 | `416bca3fef1aa329b5db99135e9cd02824f28377756f854d20f69dc50abd53eb` |
-| 2 | `dd1b9259b0ba755447f471d41c0ac6084e4639ecda279a7512de027342646b0d` |
-| 3 | `77a9e944c3b794517a0820e24529c3554f85a631ad8e654cf7ce0ee7b3f9e24e` |
-| 4 | `cfdcd245d261f94ae689c7623db6fa36f4f9438d67cac0ec6fae869c60a91555` |
+| 1 | `3bca142fba929dcd9aca413cf85f0d49395ad634318475d0cae19ce41503dc3b` |
+| 2 | `6de00991dcfbb3be3f9899f96a40d064376ccb11a80eac567db9e0a2046c7203` |
+| 3 | `562be3f91677d9a062c56958792db2bd801857d955d9262920c254b2796551b0` |
+| 4 | `80a82bbe349c04331b35a1fa969319097bf04bb6d62936081bfbaf7e93043193` |
 
 Chỉ cần so 8 ký tự đầu. Đúng chuỗi này thì file của bạn giống từng byte với bản
 đã được kiểm thử; mọi lỗi nếu có sẽ không phải do bước áp vá. Đĩa đã vá có
@@ -277,6 +277,9 @@ PCSX-Redux; ePSXe, Mednafen/Beetle PSX đều đọc được BIN/CUE.
 > - Câu "Nhận được X" dùng đúng tên vật phẩm trong túi đồ (Bom Ảo Giác, Đá Phong
 >   Ấn, Tia Băng, Gió Giật, Giấy Thông Hành, Giấy Phép Thuyền, Giấy Phép Làm
 >   Luật / Phóng Luật, Chân Dung Lavitz…).
+> - Mô tả vật phẩm không còn viết tắt khó hiểu: "Đơn/Toàn (lôi, nhiều lần)" thành
+>   "Đánh 1 địch / Đánh tất cả (lôi, nhiều lần)", "Giải M, H, S, N" thành tên
+>   trạng thái đầy đủ; thống nhất "Khóa vũ khí", "Hệ vô", "Đại Thiên Thần".
 >
 > **Cập nhật 8/10/2026 (v1.4):**
 > - Rà lại toàn bộ hộp lựa chọn của 4 đĩa theo lệnh đặt vạch chọn trong script
