@@ -23,10 +23,10 @@ Mỗi đĩa có **một** file vá riêng; phải vá đủ cả 4 đĩa để c
 
 | Đĩa | File cần tải | Mã đĩa | SHA-256 đĩa ra bắt đầu bằng |
 |---|---|---|---|
-| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `a5a68030` |
-| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `b6c27f9d` |
-| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `1783cb68` |
-| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `78cfe43e` |
+| 1 | `LoD-Disc1-vi.ppf` | SCUS-94491 | `4bf6a6b4` |
+| 2 | `LoD-Disc2-vi.ppf` | SCUS-94584 | `b5220895` |
+| 3 | `LoD-Disc3-vi.ppf` | SCUS-94585 | `87f7d552` |
+| 4 | `LoD-Disc4-vi.ppf` | SCUS-94586 | `97b0f667` |
 
 Quy tắc quan trọng, tránh nhầm:
 
@@ -210,10 +210,10 @@ Tính SHA-256 của từng file đã vá (cùng cách ở mục 2) và so với 
 
 | Đĩa | SHA-256 đĩa ra |
 |---|---|
-| 1 | `a5a680300bac216d9852b6ac5913dad67b939153d1122cdd2feef9ea87a98200` |
-| 2 | `b6c27f9dfa5b894a8d493289f4a0ac4452c87bb41bbcef06ba49394eda83ff63` |
-| 3 | `1783cb68b7eb8dca422058f3bf0ad40bab2ba1351c9bb8a964f2698cfaa0eb7c` |
-| 4 | `78cfe43eb12d539a884d56a47535632109987f5850575bd14217329058dd6bc3` |
+| 1 | `4bf6a6b450a1325bca74d7d08004b1995bb9063628a3dddb1192478ee9940d55` |
+| 2 | `b5220895f42d4f5c1a240f316a9591e648700537e7904a59c1394c3462b95cee` |
+| 3 | `87f7d5526a017fd4945662baba5d4783655ab4a85382bc223ab19d9a7c327e48` |
+| 4 | `97b0f667c0c8275a3c0bb8b8d02d53d5fed413ec33c642eb13eac08a252bfcbd` |
 
 Chỉ cần so 8 ký tự đầu. Đúng chuỗi này thì file của bạn giống từng byte với bản
 đã được kiểm thử; mọi lỗi nếu có sẽ không phải do bước áp vá. Đĩa đã vá có
@@ -257,6 +257,18 @@ PCSX-Redux; ePSXe, Mednafen/Beetle PSX đều đọc được BIN/CUE.
   vẫn hiện chữ cũ và có thể mang theo lỗi cũ (ví dụ lỗi đứng máy khi ra đòn của
   bản trước 6/10/2026) dù đĩa mới đã đúng. Vào game bằng "Continue" từ thẻ nhớ.
 
+> **Cập nhật 8/10/2026 (v1.4):**
+> - Rà lại toàn bộ hộp lựa chọn của 4 đĩa theo lệnh đặt vạch chọn trong script
+>   (260 câu): vạch chọn không còn lệch dòng (ví dụ "Quái Vật Đen hay em?" ở
+>   đền Shirley, cảnh mẹ Miranda, chọn người chơi, dịch chuyển ở Ấn Phong).
+> - Khung thoại có bề rộng cố định (trong trận, cảnh thử thách) không còn bị
+>   game tự ngắt dòng sinh dòng trống / chữ tràn khung (118 câu).
+> - **Chữ hiện sai kiểu "Dart" thành "gưrt", "Nhận được" thành "Nitzn được"**
+>   là do nạp save state tạo từ bản vá cũ: font chữ chỉ được nạp lúc bật game,
+>   save state giữ font của bản cũ. Bật lại game rồi vào bằng "Continue" từ thẻ
+>   nhớ là hết. Từ v1.3 trở đi bảng chữ ghép được giữ cố định, nên save state
+>   tạo trên v1.3 dùng tiếp được với các bản sau.
+>
 > **Cập nhật 8/10/2026 (v1.3):**
 > - Sửa **kẹt không điều khiển được** khi vào nhà tù Hellena.
 > - Sửa **sập game ở trận Fruegel** (và các khung thoại khác trong trận/phim).
